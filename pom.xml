@@ -37,11 +37,11 @@
     		<version>1.2.17</version>
 		</dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>2.17.0</version>
-		</dependency> 
+		</dependency>  -->
 
 		<dependency>
 		    <groupId>org.apache.tomcat</groupId>
@@ -91,7 +91,7 @@
 			</plugin>
 
 			<!-- OWASP Dependency check pluggin -->
-			
+
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
@@ -104,7 +104,7 @@
 					</formats>
 				</configuration>
 			</plugin>
-			
+
 			<!-- Maven Sonar Qube pluggin -->
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>

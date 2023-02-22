@@ -29,11 +29,11 @@ public class login {
 	private String userId = "";
 
 	private String errorMessage="";
-	
+
 	@RequestMapping(value = "login", method = RequestMethod.POST)
 	public ModelAndView login(String userName, String password) throws ClassNotFoundException {
 
-		
+
 		Class.forName("com.mysql.jdbc.Driver");
 		// validate user credentials
 		String query = "select * from Employee where username='" + userName + "' and password='"+password+"'";
@@ -52,28 +52,28 @@ public class login {
 
 		ModelAndView mv;
 		if (userId != "")
-		{			
+		{
 			mv = new ModelAndView("user");
 			mv.addObject("username", userId);
 		}
 		else
 		{
-			
+
 			mv = new ModelAndView("login");
 			mv.addObject("errorMessage", errorMessage);
 		}
 
 		return mv;
 	}
-	
-	
-	
+
+
+
 	@RequestMapping(value = "login", method = RequestMethod.GET)
 	public ModelAndView registerform()
 	{
 		ModelAndView mv=new ModelAndView("login");
-		
-		return mv;		
+
+		return mv;
 	}
 
 }

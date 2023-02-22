@@ -16,22 +16,22 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
 
-	
+
 	@RequestMapping("home")
 	public ModelAndView home() {
 		ModelAndView mv = new ModelAndView("home");
 
 		//mv.addObject("username", "");
-		
+
 		return mv;
 	}
-	
+
 	@RequestMapping("/")
 	public ModelAndView Default() {
 		ModelAndView mv = new ModelAndView("home");
 
 		//mv.addObject("username", "");
-		
+
 		return mv;
 	}
 

@@ -26,7 +26,7 @@
       command: docker rm constantin-devops-container-2
       ignore_errors: yes # in case container doesn’t exist
 
-    - name: remove docker images 
+    - name: remove docker images
       command: docker rmi constantin-devops-image-2:latest
       ignore_errors: yes # in case image does not exist
 

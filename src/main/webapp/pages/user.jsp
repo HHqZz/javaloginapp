@@ -12,7 +12,7 @@ Welcome ${username}
   	  <button onclick="window.location.href = 'http://www.iwayq.com';"> Home </button>
 	  <button onclick="window.location.href = 'http://www.iwayq.com/gallery/gallery.html';"> Gallery </button>
 	  <button onclick="window.location.href = 'http://www.iwayq.com/videos/videos.html';"> Videos  </button>
-	  <button onclick="window.location.href = 'http://www.iwayq.com/videos/videos.html';"> Articles  </button>	  
+	  <button onclick="window.location.href = 'http://www.iwayq.com/videos/videos.html';"> Articles  </button>
 	  <button onclick="window.location.href = 'http://www.iwayq.com/videos/videos.html';"> Tutorials  </button>
 	  <button onclick="window.location.href = 'http://www.iwayq.com/videos/videos.html';"> Assessment  </button>
 	  <button onclick="window.location.href = 'http://www.iwayq.com/videos/videos.html';"> Poll & Survey  </button>

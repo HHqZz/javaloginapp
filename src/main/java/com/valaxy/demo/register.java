@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class register {
-	
+
 
 	@Value("${spring.datasource.url}")
 	private String url;
@@ -23,17 +23,17 @@ public class register {
 
 	@Value("${spring.datasource.password}")
 	private String DBpassword;
-	
-	
+
+
 	@RequestMapping(value = "register", method = RequestMethod.GET)
 	public ModelAndView registerform()
 	{
 		ModelAndView mv=new ModelAndView("register");
-		
-		return mv;		
+
+		return mv;
 	}
-	
-	
+
+
 	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public ModelAndView register(String firstName,String lastName,String email,String userName,String password) throws ClassNotFoundException
 	{
@@ -50,12 +50,12 @@ public class register {
 			ex.printStackTrace();
 
 		}
-				
-		
-		ModelAndView mv=new ModelAndView("register");		
+
+
+		ModelAndView mv=new ModelAndView("register");
 		mv.addObject("message", "user account has been added for "+userName);
-		return mv;		
+		return mv;
 	}
-	
+
 
 }
