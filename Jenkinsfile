@@ -33,7 +33,7 @@ pipeline {
                     try{
                         sh """
                         docker exec owasp \
-                        zap-full-scan.py \
+                        zap-baseline-scan.py \
                         -t $target \
                         -x report.xml
                         -I
