@@ -29,7 +29,7 @@ pipeline {
         stage('Scanning target on owasp container') {
             steps {
                 script {
-                    target = "http://10.19.1.17:8082/webapp/pages/home.jsp"
+                    target = "http://10.19.1.17:8081/webapp"
                     try{
                         sh """
                         docker exec owasp \
